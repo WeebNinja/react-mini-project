@@ -8,7 +8,7 @@ import './MovieDetail.scss'
 
 type Props = {}
 
-const MovieDetail = (props: Props) => {
+const MovieDetail = ({}: Props) => {
     const [movie,setMovie] = useState<MovieDetailData | undefined>()
     const [loading,setLoading] = useState<boolean>(false)
     const {id} = useParams()
